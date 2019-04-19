@@ -42,6 +42,7 @@ footer {
 }
 
 .padding-left{
+  background: rgb(245,245,245);
   grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 2; 
@@ -49,6 +50,7 @@ footer {
 }
 
 .padding-right{
+  background: rgb(245,245,245);
   grid-row: 2;
   grid-column-start: 3;
   grid-column-end: 4;
@@ -56,6 +58,7 @@ footer {
 }
 
 .folder-grid {
+  background: rgb(245,245,245);
   grid-row: 2;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -68,6 +71,7 @@ footer {
 .folder-tab {
   /* background-color: rgb(241, 213, 146); */
   background-color: rgb(255, 246, 194);
+  /* color: #dc7b14; */
   border: 1px solid #ffe801;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
@@ -144,7 +148,6 @@ footer {
 }
 
 a {
-  color: #dc7b14;
   text-decoration: none;
 }
 
