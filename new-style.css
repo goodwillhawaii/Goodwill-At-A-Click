@@ -118,6 +118,7 @@ footer {
 }
 
 .folder-body {
+  background-color: rgb(255, 246, 194);
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   grid-row: 2;
@@ -138,6 +139,7 @@ footer {
   text-align: left;
   background-image: url('media/white-paperboard.png');
   background-repeat: repeat;
+  
 }
 
 .folder-body-right {
@@ -149,6 +151,7 @@ footer {
   text-align: center;
   background-image: url('media/white-paperboard.png');
   background-repeat: repeat;
+  
 }
 
 a {
