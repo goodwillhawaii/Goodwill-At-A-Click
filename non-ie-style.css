@@ -21,7 +21,6 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
 }
 
 /*This property makes the entire folder tab clickable*/
@@ -139,7 +138,6 @@ footer {
   text-align: left;
   background-image: url('media/white-paperboard.png');
   background-repeat: repeat;
-  
 }
 
 .folder-body-right {
@@ -155,7 +153,7 @@ footer {
 }
 
 a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: #383428;
 }
 
@@ -187,7 +185,6 @@ img {
   font-weight: bold;
   background-image: url('media/cream-paper.png');
   background-repeat: repeat;
-  /* border-radius: 10px 10px 0px 0px; */
 }
 
 .accordion-title:after, .accordion-title:before {
