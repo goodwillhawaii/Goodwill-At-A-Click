@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'MyFont';
-  src: url('fonts/ArchitectsDaughter.ttf');
+  src: url('../fonts/ArchitectsDaughter.ttf');
 }
 
 body {
@@ -118,6 +118,7 @@ footer {
 
 .folder-body {
   background-color: rgb(255, 246, 194);
+  /* background-color: #1111ff; */
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   grid-row: 2;
@@ -131,6 +132,7 @@ footer {
 
 .folder-body-left {
   background-color: rgb(255, 246, 194);
+  /* background-color: #11ff11; */
   padding: 1em;
   border-bottom: 1px solid #fff5c2;
   border-left: 1px solid #fff5c2;
@@ -142,6 +144,8 @@ footer {
 
 .folder-body-right {
   background-color: #fff5c2;
+  /* background-color: #ff1111; */
+  height:inherit;
   border-bottom: 1px solid #fff5c2;
   border-right: 1px solid #fff5c2;
   border-radius: 0px 0px 5px 0px;
