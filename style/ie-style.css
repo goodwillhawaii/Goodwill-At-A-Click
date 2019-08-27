@@ -66,7 +66,7 @@ footer {
     /***NEW GRID***/
     display: -ms-grid;
     -ms-grid-rows: 2em 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
 }
 
 .folder-tab {
@@ -94,10 +94,6 @@ footer {
 
 .folder-tab:nth-child(4n) {
     -ms-grid-column: 4;
-}
-
-.folder-tab:nth-child(5n) {
-    -ms-grid-column: 5;
 }
 
 /* .folder-tab-empty {
@@ -137,10 +133,6 @@ footer {
 
 .folder-tab-selected:nth-child(4n) {
     -ms-grid-column: 4;
-}
-
-.folder-tab-selected:nth-child(5n) {
-    -ms-grid-column: 5;
 }
 
 .folder-tab:hover {
