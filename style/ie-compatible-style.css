@@ -1,0 +1,90 @@
+body {
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 600px 1fr;
+    -ms-grid-columns: 1fr 800px 1fr;
+}
+
+header {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 3;
+}
+
+footer {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column-span: 3;
+}
+
+.padding-left {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+
+.padding-right {
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+}
+
+.folder-grid {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    /***NEW GRID***/
+    display: -ms-grid;
+    -ms-grid-rows: 2em 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+}
+
+.folder-tab {
+    -ms-grid-row: 1;
+}
+
+.folder-tab:nth-child(1n) {
+    -ms-grid-column: 1;
+}
+
+.folder-tab:nth-child(2n) {
+    -ms-grid-column: 2;
+}
+
+.folder-tab:nth-child(3n) {
+    -ms-grid-column: 3;
+}
+
+.folder-tab:nth-child(4n) {
+    -ms-grid-column: 4;
+}
+
+.folder-tab-selected:nth-child(1n) {
+    -ms-grid-column: 1;
+}
+
+.folder-tab-selected:nth-child(2n) {
+    -ms-grid-column: 2;
+}
+
+.folder-tab-selected:nth-child(3n) {
+    -ms-grid-column: 3;
+}
+
+.folder-tab-selected:nth-child(4n) {
+    -ms-grid-column: 4;
+}
+
+.folder-body {
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 5;
+    /***NEW GRID***/
+    display: -ms-grid;
+    -ms-grid-columns: 61.8% 1fr;
+}
+
+.folder-body-left {
+    -ms-grid-column: 1;
+    padding: 1em;
+    
+}
+
+.folder-body-right {
+    -ms-grid-column: 2;
+}
