@@ -56,5 +56,5 @@
 <script language=javascript>
   var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
   setTimeout('closewin();', intTimeout);
-  function closewin(){ window.close();}
+  function closewin(){ window.close(); return true;}
 </script>
