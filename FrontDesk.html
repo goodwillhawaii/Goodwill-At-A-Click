@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <script language="javascript" type="text/javascript">
-      function windowClose() {
-      window.open('','_parent','');
-      setTimeout('windowClose();', 15000);
-      window.close();
-      }
-      </script>
+
   <meta charset="utf-8" />
   <title>Goodwill Hawaii Intranet Portal</title>
 
@@ -61,7 +55,7 @@
 </html>
 
 <script language=javascript>
-  //var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
-  //setTimeout('closewin();', intTimeout);
-  //function closewin(){ window.close();}
+  var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
+  setTimeout('closewin();', intTimeout);
+  function closewin(){ window.close();}
 </script>
