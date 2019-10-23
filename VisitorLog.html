@@ -157,38 +157,43 @@
 
         <h4>Name<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="First" />
-          <input type="text" name="name" placeholder="Last" />
+          <input type="text" id="fname" placeholder="First" />
+          <input type="text" id="lname" placeholder="Last" />
         </div>
 
         <h4>Day Visited<span>*</span></h4>
         <div class="day-visited">
-          <input type="date" name="dayvisited" required/>
+          <input type="date" id="dayvisited" required/>
           <i class="fas fa-calendar-alt"></i>
         </div>
 
         <h4>Time In<span>*</span></h4>
  <div class="time-in">
-          <input type="time" name="timein" required/>
+          <input type="time" id="timein" required/>
           <i class="fas fa-clock"></i>
         </div>
 
         <h4>Destinaton/Sponsor<span>*</span></h4>
-        <input type="text" name="name" placeholder="Name or Location" />
+        <input type="text" id="destination/sponsor" placeholder="Name or Location" />
 
 
         <h4>Time Out<span>*</span></h4>
         <div class="time-in">
-                 <input type="time" name="timein" required/>
+                 <input type="time" id="timeout" required/>
                  <i class="fas fa-clock"></i>
                </div>
 
-        
-
         <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
+          <button type="submit" onclick="formSubmit()">Submit</button>
         </div>
       </form>
     </div>
   </body>
 </html>
+
+<script>
+  function formSubmit() {
+    alert("Thank you! Your form has been submitted!");
+    setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",3000);
+  }
+  </script>

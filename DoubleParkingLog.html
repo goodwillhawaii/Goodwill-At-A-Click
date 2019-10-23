@@ -157,33 +157,40 @@
 
         <h4>Color of Vehicle<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="Color of car" />
+          <input type="text" id="carcolor" placeholder="Color of car" />
         </div>
 
         <h4>Make Model<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="Car Model name" />
+          <input type="text" id="carmodel" placeholder="Car Model name" />
         </div>
 
         <h4>License Plate<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="License Plate" />
+          <input type="text" id="carlicense" placeholder="License Plate" />
         </div>
 
         <h4>Owner Name<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="Owner Name" />
+          <input type="text" id="ownername" placeholder="Owner Name" />
         </div>
 
         <h4>Contact Number<span>*</span></h4>
         <div class="name">
-          <input type="text" name="name" placeholder="888-888-888" />
+          <input type="text" id="contactnum" placeholder="888-888-888" />
         </div>
 
         <div class="btn-block">
-          <button type="submit" href="/">Submit</button>
+          <button type="submit" onclick="formSubmit()">Submit</button>
         </div>
       </form>
     </div>
   </body>
 </html>
+
+<script>
+  function formSubmit() {
+    alert("Thank you! Your form has been submitted!");
+    setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",5000);
+  }
+  </script>
