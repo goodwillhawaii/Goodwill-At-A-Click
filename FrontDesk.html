@@ -34,7 +34,7 @@
           <div class="accordion-content">
             <p>
               <a href="https://forms.gle/ypBNzvn1pZaX6xGR6">Sign in for Visiting</a>
-              <script>countdown();</script>
+              <script>closewin();</script>
             </p>
             <p>
               <a href="https://forms.gle/vH78CpptojtXYaFf8">Sign in for Double Parking</a>
@@ -54,16 +54,8 @@
 
 </html>
 
-<script type="text/javascript">
-
-  function countdown() {
-    var i = document.getElementById('counter');
-    i.innerHTML = parseInt(i.innerHTML)-1;
-    
-    if (parseInt(i.innerHTML)<=0) {
-      window.close();
-    }
-  }
-  setInterval(function(){ countdown(); }, 20000);
-  
-  </script>
+<script language=javascript>
+  var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
+  setTimeout('closewin();', intTimeout);
+  function closewin(){ window.close();}
+</script>
