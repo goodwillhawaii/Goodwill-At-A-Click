@@ -4,6 +4,9 @@
     <title>Visitor Log Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <script src="lib/d3.v4.min.js"></script>
+    <script type="text/javascript" src="js/visitor.js"></script>
     <style>
       html, body {
       min-height: 100%;
@@ -150,15 +153,15 @@
       }
     </style>
   </head>
-  <body>
+  <body><!--
     <div class="testbox">
-      <form action="/">
+      <form name = "visitorForm" action = "file:///C:/Users/williams/Documents/GitHub/Goodwill-At-A-Click/VisitorReport.html" method="get">
         <h1>Visitor Log Form</h1>
 
         <h4>Name<span>*</span></h4>
-        <div class="name">
-          <input type="text" id="fname" placeholder="First" />
-          <input type="text" id="lname" placeholder="Last" />
+        <div class="ui borderless topmenu">
+          First<input type="text" id="fname" placeholder="First"/><br />
+          Last<input type="text" id="lname" placeholder="Last"/>
         </div>
 
         <h4>Day Visited<span>*</span></h4>
@@ -168,32 +171,55 @@
         </div>
 
         <h4>Time In<span>*</span></h4>
- <div class="time-in">
+        <div class="time-in">
           <input type="time" id="timein" required/>
           <i class="fas fa-clock"></i>
         </div>
 
         <h4>Destinaton/Sponsor<span>*</span></h4>
-        <input type="text" id="destination/sponsor" placeholder="Name or Location" />
+        <input type="text" id="destination/sponsor" placeholder="Name or Location" />-->
 
-
-        <h4>Time Out<span>*</span></h4>
+        <!--<h4>Time Out<span>*</span></h4>
         <div class="time-in">
                  <input type="time" id="timeout" required/>
                  <i class="fas fa-clock"></i>
-               </div>
-
+               </div>-->
+<!--
         <div class="btn-block">
           <button type="submit" onclick="formSubmit()">Submit</button>
         </div>
       </form>
     </div>
+    <script>
+        function formSubmit() {
+      
+          var message = "";
+          if (document.getElementById('fname').value == "") { message += "Please enter your first name!\n"}
+          if (document.getElementById('lname').value == "") { message += "Please enter your last name!\n"}
+          if (document.getElementById('dayvisited').value == "") { message += "Please enter todays date!\n"}
+          if (document.getElementById('timein').value == "") { message += "Please enter the time you are signing in!\n"}
+          if (document.getElementById('destination/sponsor').value == "") { message += "Please enter the name of person or department you are seeing!\n"}
+          if (message.length > 0) {
+            alert(message);
+            return false;
+          }
+          else {/*
+            var firstName = document.getElementById("fname").value;
+            var lastName =  document.getElementById("lname").value;
+            var date = document.getElementById("dayvisited").value;
+            var timeIn = document.getElementById("timein").value;
+            var destinationSponsor = document.getElementById("dayvisited").value;
+            var timeOut = document.getElementById("timeout").value;*/
+/*
+            alert("Thank you! Your form has been submitted!");
+            if(typeof(sessionStorage) !== "undefined"){
+              sessionStorage.setItem = firstName;
+            }
+            document.getElementById("visitorForm").submit();*/
+            
+            //setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",3000);
+         //}
+        }
+        </script>-->
   </body>
 </html>
-
-<script>
-  function formSubmit() {
-    alert("Thank you! Your form has been submitted!");
-    setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",3000);
-  }
-  </script>

@@ -16,49 +16,43 @@
 </head>
 
 <body>
-
-  <header>
-    <!-- <img src="https://www.higoodwill.org/wp-content/uploads/2019/02/60th-Anniversary-logo-email_400x109.png"
-      alt="logo"></a> -->
-  </header>
-<!-- <script>
-  settimeout('self.close()', 5000);
-</script> -->
+  <header><img src="media/60th-Anniversary-logo-email_400x109.png" style="height:128px;" alt="logo"></header>
   <div class="folder-grid">
     <div class="folder-body">
       <div class="folder-body-left">
-        <h1>Front Desk</h1>
+        <h1 style="text-align:right">Front Desk</h1>
         <div class="accordion" style="transform: rotate(-1deg) !important;">
           <input type="checkbox" id="toggle1" class="accordion-toggle" checked />
-              <label class="accordion-title" for="toggle1">Front Desk
+              <label class="accordion-title" for="toggle1"><center>Front Desk</center>
           </label>
           <div class="accordion-content">
             <p>
-              <a href="https://forms.gle/ypBNzvn1pZaX6xGR6" target="_blank">Sign in for Visiting</a>
-              <!-- <script>windowClose();</script> -->
+              <a href="https://forms.gle/ypBNzvn1pZaX6xGR6" id="link1" target="_blank">Sign in for Visiting</a>
               <script>
-                setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",20000);  // 20 seconds
+               // setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",20000);  // 20 seconds then redirects to link shown
                 </script>
             </p>
             <p>
-              <a href="https://forms.gle/vH78CpptojtXYaFf8" target="_blank">Sign in for Double Parking</a>
+              <a href="https://forms.gle/vH78CpptojtXYaFf8" id="link2" target="_blank">Sign in for Double Parking</a>
             </p>
             <p>
-              <a href="https://docs.google.com/spreadsheets/d/1YUNhz4JGssr9pAKsOAy1dHx27JBMZM4GiZdAY1zlcUo/edit?usp=sharing" target="_blank">View Double Parking Log</a>
+              <a href="https://docs.google.com/spreadsheets/d/1YUNhz4JGssr9pAKsOAy1dHx27JBMZM4GiZdAY1zlcUo/edit?usp=sharing" id="link3" target="_blank">View Double Parking Log</a>
             </p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <footer></footer>
-
 </body>
-
+<script language=javascript>/*
+    var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
+    setTimeout('closewin();', intTimeout);
+    function closewin(){ window.close();}*/
+    document.getElementById("link1").addEventListener("click", function(){
+      window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
+      document.getElementById("link2").addEventListener("click", function(){
+      window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
+      document.getElementById("link3").addEventListener("click", function(){
+      window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
+  </script>
 </html>
-
-<script language=javascript>
-  var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
-  setTimeout('closewin();', intTimeout);
-  function closewin(){ window.close();}
-</script>
