@@ -38,13 +38,13 @@ button {
             <button id="button" style=>Return</label>
           </div>
     </div>
+    <script>
+      setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",30000);  // 30 seconds then redirects to link shown
+    </script>
   </div>
 </body>
 
-<script language=javascript>/*
-    var intTimeout = new Number(20000); // 300,000 ms - 5 minute inactivity timeout
-    setTimeout('closewin();', intTimeout);
-    function closewin(){ window.close();}*/
+<script language=javascript>
     document.getElementById("button").addEventListener("click", function(){
       window.location.assign("https://gih-goodwillataclick.azurewebsites.net/frontdesk.html")});
   </script>
