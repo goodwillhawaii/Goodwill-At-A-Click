@@ -23,20 +23,31 @@
         <h1 style="text-align:right">Front Desk</h1>
         <div class="accordion" style="transform: rotate(-1deg) !important;">
           <input type="checkbox" id="toggle1" class="accordion-toggle" checked />
-              <label class="accordion-title" for="toggle1"><center>Front Desk</center>
+              <label class="accordion-title" for="toggle1"><center>Visitors</center>
           </label>
           <div class="accordion-content">
             <p>
-              <a href="https://forms.gle/ypBNzvn1pZaX6xGR6" id="link1" target="_blank">Sign in for Visiting</a>
+              <a href="https://forms.gle/iXQuESTiWVWYhJQR9" id="link1" target="_blank">Sign in for Visiting</a>
               <script>
                // setTimeout("location.href = 'https://gih-goodwillataclick.azurewebsites.net/frontdesk.html';",20000);  // 20 seconds then redirects to link shown
                 </script>
             </p>
             <p>
-              <a href="https://forms.gle/vH78CpptojtXYaFf8" id="link2" target="_blank">Sign in for Double Parking</a>
+              <a href="https://docs.google.com/spreadsheets/d/1xVs3QIjjfRr6QtrphVPkFqJtSXRoy0NKfv7Afr8RNis/edit?usp=sharing" id="link2" target="_blank">Sign in for Time out</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion" style="transform: rotate(-1deg) !important;">
+          <input type="checkbox" id="toggle1" class="accordion-toggle" checked />
+              <label class="accordion-title" for="toggle1"><center>Double Parking</center>
+          </label>
+          <div class="accordion-content">
+            <p>
+              <a href="https://forms.gle/vH78CpptojtXYaFf8" id="link3" target="_blank">Sign in for Double Parking</a>
             </p>
             <p>
-              <a href="https://docs.google.com/spreadsheets/d/1YUNhz4JGssr9pAKsOAy1dHx27JBMZM4GiZdAY1zlcUo/edit?usp=sharing" id="link3" target="_blank">View Double Parking Log</a>
+              <a href="https://docs.google.com/spreadsheets/d/1YUNhz4JGssr9pAKsOAy1dHx27JBMZM4GiZdAY1zlcUo/edit?usp=sharing" id="link4" target="_blank">View Double Parking Log</a>
             </p>
           </div>
         </div>
@@ -50,9 +61,14 @@
     function closewin(){ window.close();}*/
     document.getElementById("link1").addEventListener("click", function(){
       window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
-      document.getElementById("link2").addEventListener("click", function(){
+
+    document.getElementById("link2").addEventListener("click", function(){
       window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
-      document.getElementById("link3").addEventListener("click", function(){
+
+    document.getElementById("link3").addEventListener("click", function(){
+      window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
+
+    document.getElementById("link3").addEventListener("click", function(){
       window.location.assign("https://gih-goodwillataclick.azurewebsites.net/confirmation.html")});
   </script>
 </html>
